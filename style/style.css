@@ -1,15 +1,108 @@
+/* font */
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-weight: 400;
+    margin: 5px 0;
+}
+h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+h5>span{
+    color: red;
+    font-size: 1.3em;
+}
+p{
+    font-size: .7em;
+    color: #999;
+}
+/* font */
+
+
+
+
 .content{
     width: 70%;
     /* height: 100vh; */
     margin: auto;
 }
 header{
-    background-color: #e579e6;
     min-height: 10vh;
 }
 .container{
     min-height: 30vh;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+ul{
+    font-size: 0px;
+}
+
+.logo-wrapper img{
+    width: 150px;
+    margin-top:2px;
+}
+
+
+
+
+
+/* navigation */
+nav{
+    margin: 15px auto 0 0;
+}
+nav>ul li{
+    display: inline-block;
+}
+li>a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    padding: .2em .5em;
+}
+a:hover{
+    color: #444;
+    transition: .3s ease-out;
+}
+li a:first-child{
+    padding-left: 0;
+}
+/* / navigation */
+
+
+
+
+
+/* jumbo tron */
+.jumbo-tron{
+    height: 400px;
+    background: url("../img/banner.jpg") center;
+    background-size: cover;
+}
+
+.bg-dark{
+    width: 100%;
+    height: 400px;
+    background: rgba(0,0,0,.2);
+    padding: 225px 30px 30px 50px;
+}
+.bg-dark h1, .bg-dark p{
+    color: white;
+    width: 60%;
+}
+.bg-dark h1{
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.bg-dark p{
+    font-size: 14px;
+}
+/* / jumbo tron */
+
 
 
 
@@ -37,7 +130,7 @@ header{
 
 /* float blocks styling */
 .float-blocks{
-    height: 30vh;
+    /* height: 30vh; */
     width: 20%;
     margin: 2.5% 2.5%;
 }
@@ -53,6 +146,31 @@ header{
     width: 55%;
     margin: 2.5% 0;
 }
+
+
+/* column images */
+.img-column-1{
+    background: url(../img/img-1.jpg) center;
+}
+.img-column-2{
+    background: url(../img/banner-2.jpg) center;
+}
+.img-column-3{
+    background: url(../img/img-3.jpg) center;
+}
+.img-column{
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* / column images */
+
+
+
 /* float blocks styling */
 
 
@@ -60,24 +178,13 @@ header{
 
 
 
-/* backgrounds colors */
-.bg-yellow{
-    background-color:  #e1d67a;
-}
-.bg-blue{
-    background-color: #0087fa;
-}
-.bg-transparent{
-    background-color: rgba(250, 250, 250,0.5);
-}
-/* backgrounds colors */
 
 
 
 
 footer{
     min-height: 5vh;
-    background-color: #8801fe;
+    text-align: center;
 }
 
 
@@ -97,5 +204,5 @@ footer{
 
 /* reusable styles */
 .margin-bottom{
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
 }
